@@ -129,3 +129,15 @@ article {
 address , h3{
     margin: 25px 0 25px 0;
 }
+
+.upper_footer {
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.copy {
+    text-align:left;
+    margin-left: 20px
+}
