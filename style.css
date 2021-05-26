@@ -9,7 +9,6 @@ body {
     color: seashell;
     font-size: 22px;
     background-color: black;
-    opacity: 0.9;
     text-align: center;
 }
 
@@ -22,6 +21,7 @@ header {
     position: fixed;
     z-index: 1;
     align-items: center;
+    background-color:black;
 }
 
 header img {
@@ -45,3 +45,30 @@ li a:hover {
     color: grey;
 }
 
+main {
+    position: relative;
+    top: 70px;
+    text-align: center;
+}
+
+#mission {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.container {
+    background-color: black;
+    padding: 10px;
+
+}
+.container h2 {
+    margin-bottom: 10px;
+}
