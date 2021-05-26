@@ -60,7 +60,7 @@ main {
     display:flex;
     flex-direction: column;
     justify-content: center;
-
+    margin-bottom: 100px;
 
 }
 
@@ -69,6 +69,35 @@ main {
     padding: 10px;
 
 }
-.container h2 {
+h2 {
     margin-bottom: 10px;
+}
+
+#feature {
+    width: 1000px;
+    margin: 0 auto;
+    /* border: 3px solid red; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#images {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#images img {
+    width: 300px;
+    height: 200px;
+    margin: 10px 0 10px 0;
+}
+
+.bottom {
+    width: 650px;
+    /* border: 1px solid blue; */
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 100px;
 }
