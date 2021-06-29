@@ -1,0 +1,15 @@
+//===========================================
+// Helpers functions
+//===========================================
+
+// Import if google fonts url is defined
+
+@if variable-exists($name: font-url--google) {
+    @import url($font-url--google);
+}
+
+// Compute em values
+
+@function px_to_em($target, $context: $base__font-size) {
+    @return ($target / $context) * 1em;
+}
