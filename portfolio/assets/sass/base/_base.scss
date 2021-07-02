@@ -9,9 +9,11 @@
 }
 
 body {
-    font-size: $base_font-size;
-    line-height: ($base__line/$base__font-size);
+    font-size: $base__font-size;
+    line-height: math.div($base__line, $base__font-size);
     font-family: $font-family--primary;
+    background-color: palette(grey, xx-light);
+    color: palette(black, light);
 }
 
 h1 {
