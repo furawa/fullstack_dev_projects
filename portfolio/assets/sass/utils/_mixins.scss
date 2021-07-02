@@ -1,0 +1,12 @@
+//=====================================
+// All the mixins here
+//=====================================
+
+// Mixin for background images
+@mixin img-replace($img, $w, $h, $display: "block") {
+    background-image: url("#{path--rel}/#{$img}");
+    background-repeat: no-repeat;
+    width: $w;
+    height: $h;
+    display: $display;
+}
