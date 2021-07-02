@@ -2,6 +2,9 @@
 // Import all the partials - The order is important
 //======================================
 
+// Import the new math.div function for divisions
+@use "sass:math"; 
+
 // 1-Import utils partials
 @import "./utils/variables";
 @import "./utils/functions";
