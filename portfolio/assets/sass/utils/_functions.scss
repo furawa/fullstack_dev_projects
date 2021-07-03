@@ -10,7 +10,7 @@
 
 // Compute em values
 
-@function px_to_em($target, $context: $base__font-size) {
+@function em($target, $context: $base__font-size) {
     @return math.div($target, $context) * 1em;
 }
 
