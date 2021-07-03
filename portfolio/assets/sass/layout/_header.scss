@@ -1,0 +1,10 @@
+//========================================
+// Header rules
+//========================================
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: em(10px) em(15px);
+    align-items: center;
+}
