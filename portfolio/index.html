@@ -11,15 +11,20 @@
 <body>
     <!--Header-->
     <header>
-        <img src="assets/images/", alt="Personal brand logo">
         <h1 id="home">Frank Pouassi</h1>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <input type="checkbox" id="hamb_menu">
+            <label for="hamb_menu" class="menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <ul>
+                    <li nav__link nav__link--active><a href="#home">Home</a></li>
+                    <li nav__link><a href="#projects">Projects</a></li>
+                    <li nav__link><a href="#about">About</a></li>
+                    <li nav__link><a href="#contact">Contact</a></li>
+                </ul>
+            </label>   
         </nav>
     </header>
 
