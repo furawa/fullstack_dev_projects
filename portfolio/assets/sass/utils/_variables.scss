@@ -8,7 +8,7 @@ $font-url--google       : "https://fonts.googleapis.com/css2?family=Roboto+Mono:
 
 $font-family--primary   : "Roboto Mono", monospace, serif;
 $font-family--secondary : "Rubik", Arial, Sans-serif;
-$font-family--logo      : "Shrinkhand", cursive, serif; 
+$font-family--logo      : "Shrikhand", cursive, serif;
 
 // Font Weigths
 
@@ -58,3 +58,7 @@ $color-shadow       : rgba($black, .3);
 
 $base__font-size    : 16px;
 $base__line         : 24px;
+
+// Path to assets/images
+
+$path--rel       : "../images";
