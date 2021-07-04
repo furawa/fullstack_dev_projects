@@ -10,30 +10,31 @@
 </head>
 <body>
     <!--Header-->
-    <header>
-        <h1 id="home">Frank Pouassi</h1>
-        <nav>
+    <header class="header">
+        <div class="header__nav" role="navigation">
+            <h1 id="home" class="header__logo">Frank Pouassi</h1>
             <input type="checkbox" id="hamb_menu">
             <label for="hamb_menu" class="menu">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+                <div class="menu__line"></div>
+                <div class="menu__line"></div>
+                <div class="menu__line"></div>
+            </label>
+            <nav>
                 <ul>
                     <li nav__link nav__link--active><a href="#home">Home</a></li>
                     <li nav__link><a href="#projects">Projects</a></li>
                     <li nav__link><a href="#about">About</a></li>
                     <li nav__link><a href="#contact">Contact</a></li>
-                </ul>
-            </label>   
-        </nav>
-    </header>
-
+                </ul>   
+            </nav>
+        </div>
     <!--Main presentation-->
-    <main>
-        <p>Hi, I'm <span>Steff</span>.A FullStack developer &amp; Data Analyst</p>
-        <p>I can A/B test the webpages that I created first with a Mobile First approach and Accessibility.</p>
-        <button>Learn More</button>
-    </main>
+        <main class="main">
+            <p class="main__p">Hi, I'm <span>Steff</span>.<br>A FullStack developer &amp; Data Analyst</p>
+            <p class="main__p--sub">I can A/B test the webpages that I created first with a Mobile First approach and Accessibility.</p>
+            <button class=".btn">Learn More</button>
+        </main>
+    </header>
 
     <!--Projects section-->
     <section id="projects">
