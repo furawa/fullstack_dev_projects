@@ -1,69 +1,35 @@
 //===================================
 // Navigation rules here
 //===================================
-
-// nav {
-//     position: relative;
-//     right: em(100px);
-// }
 nav {
-    position: relative;
-    width: em(50px);
-    height: em(50px);
-    cursor: pointer;
-}
-.line {
     position: absolute;
-    width: em(40px);
-    height: em(5px);
-    background: $black;
-    box-shadow: em(1px) em(1px) 3px RGBa(0, 0, 0, 0.4);
-    border-radius: em(5px);
-    transition: 0.4s ease;
-
-    &:nth-child(1) {
-        left: em(5px);
-        top: em(10px);
-    }
-    &:nth-child(2) {
-        left: em(5px);
-        top: em(23px);
-    
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            width: em(40px);
-            height: em(5px);
-            background: $black;
-            box-shadow: em(1px) em(1px) 3px RGBa(0, 0, 0, 0.4);
-            border-radius: em(5px);
-            transition: 0.4s ease;
-        }
-    }
-    &:nth-child(3) {
-        right: em(5px);
-        top: em(36px);
-    }
+    width: 100%;
+    height: 90vh;
+    top: 10%;
+    right: 0;
+    background: $grey;
+    transform: scale(1,0);
+    transition: 0.4s ease-in-out;
+    // border-radius: 50% 0 0 50%;
    
-}
-ul, #hamb_menu{
-    display: none;
-}
+    
+    ul {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+       
+    }
 
-#hamb_menu:checked + .menu {
-    // transform: translate(-50%,-50%) rotatey(180deg);
-    .line {
-        &:first-child,
-        &:nth-child(3) {
-            width: 0;
-        }
-        &:nth-child(2) {
-            transform: rotate(45deg);
-        }
-        &:after {
-            transform: rotate(-90deg);
+    li {
+        margin-bottom: em(24px);
+    }
+    a {
+        text-decoration: none;
+        color: $black;
+        &:hover {
+            color: $white;
         }
     }
 }
+
+
