@@ -1,0 +1,34 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    // height: 70vh;
+    border: em(2px) solid $black;
+    border-radius: em(14px);
+
+    @include e(label) {
+        display: block;
+        position: relative;
+        top: em(25px);
+        left: -28%;
+        // margin-bottom: em(10px);
+    }
+
+    @include e(input) {
+        width: 70%;
+        height: 120%;
+        font-size: em(18px);
+        padding: em(15px, 18px);
+        // margin-bottom: em(20px, 18px);
+        // border-bottom: em(6px) solid palette(grey, xx-light);
+        border-radius: em(14px);
+        background: palette(grey, xx-light);
+        color: palette(black, dark);
+        font-weight: $font-weight--light;
+
+        &:focus {
+            border-color: $color-primary;
+        }
+    }
+}
