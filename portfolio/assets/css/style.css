@@ -14,9 +14,30 @@ body {
 h1 {
   font-family: "Shrikhand", cursive, serif;
 }
+h1 a {
+  text-decoration: none;
+  color: #0b0b0b;
+  background-color: #797e83;
+}
+h1 a:hover {
+  background-color: #797e83;
+}
 
 h2, h3, h4 {
   font-family: "Rubik", Arial, Sans-serif;
+}
+
+.btn {
+  width: 6.25em;
+  height: 3.125em;
+  border-radius: 0.625em;
+  background: black;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #93989c;
+  color: #fff;
 }
 
 #hamb_menu {
@@ -33,7 +54,7 @@ h2, h3, h4 {
   width: 2.5em;
   height: 0.3125em;
   background: #0b0b0b;
-  box-shadow: 0.0625em 0.0625em 0.1875em RGBa(0, 0, 0, 0.4);
+  box-shadow: 0.0625em 0.0625em 0.1875em rgba(0, 0, 0, 0.4);
   border-radius: 0.3125em;
   transition: 0.4s ease;
   margin-bottom: 0.3125em;
@@ -71,18 +92,21 @@ h2, h3, h4 {
   height: 100vh;
 }
 .header__nav {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background: #797e83;
   align-items: center;
   height: 10%;
+  z-index: 999;
 }
 
 nav {
   position: absolute;
   width: 100%;
   height: 90vh;
-  top: 10%;
+  top: 100%;
   right: 0;
   background: #797e83;
   transform: scale(1, 0);
@@ -104,8 +128,68 @@ nav a:hover {
   color: #fff;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  border: 0.125em solid #0b0b0b;
+  border-radius: 0.875em;
+}
+.form__label {
+  display: block;
+  position: relative;
+  top: 1.5625em;
+  left: -28%;
+}
+.form__input {
+  width: 70%;
+  height: 120%;
+  font-size: 1.125em;
+  padding: 0.8333333333em;
+  border-radius: 0.875em;
+  background: #e3e4e5;
+  color: black;
+  font-weight: 300;
+}
+.form__input:focus {
+  border-color: #fff;
+}
+
+.main {
+  display: grid;
+  width: 80%;
+  height: 60vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.main__p {
+  grid-row: 1/span 1;
+  font-size: 1.5em;
+  align-self: end;
+}
+.main__p span {
+  font-family: "Shrikhand", cursive, serif;
+}
+.main__p--sub {
+  grid-row: 2/span 1;
+}
+.main__btn {
+  grid-row: 3/span 1;
+  justify-self: center;
+  align-self: center;
+}
+
 img {
   width: 100%;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
