@@ -11,12 +11,13 @@
     display: $display;
 }
 
+//Mixin to easily add an element 
 @mixin e($element) {
     &__#{$element} {
         @content;
     }
 }
-
+// Mixin to easily add a modifier
 @mixin m($modifier) {
     &--#{$modifier} {
         @content;
