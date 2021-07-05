@@ -97,17 +97,17 @@
     <!--contact section-->
     <section id="contact">
         <h2>Get In Touch</h2>
-        <form action="index.html", method="POST">
-            <label for="name">Name*</label>
-            <input type="text", id="name", name="user_name", placeholder="Marco Rossi" required>
+        <form class="form" action="index.html", method="POST">
+            <label class="form__label"for="name">Name*</label>
+            <input class="form__input" type="text", id="name", name="user_name", placeholder="Marco Rossi" required>
 
-            <label for="email">Email*</label>
-            <input type="email" id="email", name="user_email", placeholder="company@example.com" required>
+            <label class="form__label" for="email">Email*</label>
+            <input class="form__input" type="email" id="email", name="user_email", placeholder="company@example.com" required>
 
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone", pattern="[+]*[0-9]+" name="user_phone_number", placeholder="+12345643212">
-            <label for="job_role">Job Role</label>
-            <select id="job_role" required autocomplete="off">
+            <label class="form__label" for="phone">Phone</label>
+            <input class="form__input" type="tel" id="phone", pattern="[+]*[0-9]+" name="user_phone_number", placeholder="+12345643212">
+            <label class="form__label" for="job_role">Job Role</label>
+            <select class="form__select" id="job_role" required autocomplete="off">
                 <option value="">--Please choose an option--</option>
                 <optgroup label="Web Development">
                     <option value="frontend">Front-end Developer</option>
@@ -124,9 +124,9 @@
                 </optgroup>
             </select>
 
-            <label for="message">Message*</label>
-            <textarea id="message", name="user_message", placeholder="Your message here...", rows="6" required></textarea>
-            <button type="reset">Send</button> <!--the reset type will clear the form-->
+            <label class="form__label" for="message">Message*</label>
+            <textarea class="form__input" id="message", name="user_message", placeholder="Your message here...", rows="6" required></textarea>
+            <button class="form__btn btn" type="reset">Send</button> <!--the reset type will clear the form-->
         </form>
         <div>
             <img src="assets/images/icons/map.svg" alt="Address icon">
