@@ -1,0 +1,16 @@
+//================================
+// Rules for the buttons
+//================================
+
+.btn {
+    width: em(100px);
+    height: em(50px);
+    border-radius: em(10px);
+    background: palette(black, dark);
+    color: palette(white);
+}
+
+.btn:hover {
+    background: palette(grey, light);
+    color: palette(white, base);
+}
