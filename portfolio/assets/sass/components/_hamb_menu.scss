@@ -11,7 +11,7 @@
     height: em(40px);
     margin-right: em(5px);
 
-    &__line {
+    @include e(line) {
         position: relative;
         width: em(40px);
         height: em(5px);
