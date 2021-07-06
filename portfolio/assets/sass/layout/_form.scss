@@ -4,20 +4,21 @@
     align-items: center;
     width: 90vw;
     // height: 70vh;
-    border: em(2px) solid $black;
+    border: em(3px) solid $black;
     border-radius: em(14px);
+    background: $white;
 
-    @include e(label) {
+    @include e(label){
         display: block;
         position: relative;
-        top: em(25px);
-        left: -28%;
+        top: em(24px);
+        left: -35%;
+        font-size: em(14px);
         // margin-bottom: em(10px);
     }
 
-    @include e(input) {
-        width: 70%;
-        height: 120%;
+    @include e(input){
+        width: 80%;
         font-size: em(18px);
         padding: em(15px, 18px);
         // margin-bottom: em(20px, 18px);
@@ -26,9 +27,20 @@
         background: palette(grey, xx-light);
         color: palette(black, dark);
         font-weight: $font-weight--light;
+        border: em(2px) solid $black;
 
         &:focus {
-            border-color: $color-primary;
+            outline: none;
         }
+
+        &::placeholder{
+            // position: absolute;
+            // top: 60%;
+            font-size: em(14px);
+        }
+    }
+    @include e(btn) {
+        width: 90%;
+        margin: em(12px) 0;
     }
 }
