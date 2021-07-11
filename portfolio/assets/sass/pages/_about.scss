@@ -1,0 +1,25 @@
+//=====================================
+// About me page rules
+//=====================================
+
+// My strengths rules
+
+.strengths {
+    display: grid;
+    grid-template: .25fr repeat(3, 1fr) / repeat(2, 1fr);
+    gap: em(50px) em(30px);
+    h3 {
+        grid-column: 1 / span 2;
+    }
+    img {
+        display: block;
+    }
+    @include m(right) {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    }
+    @include m(left) {
+        grid-column: 1 / span 1;
+        grid-row: 3 /span 1;
+    }
+}

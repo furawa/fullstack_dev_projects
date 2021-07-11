@@ -10,16 +10,29 @@
 
 body {
     font-size: $base__font-size;
-    line-height: math.div($base__line, $base__font-size);
+    // line-height: math.div($base__line, $base__font-size); /*Already exists in reset */
     font-family: $font-family--primary;
     background-color: palette(grey, xx-light);
-    color: palette(black, light);
+    color: palette(black, dark);
 }
 
 h1 {
     font-family: $font-family--logo;
+    a {
+        text-decoration: none;
+        color: $black;
+        background-color:$grey;
+        &:hover {
+            background-color: $grey;
+        }
+    }
 }
 
 h2, h3, h4{
+    text-align: center;
     font-family: $font-family--secondary;
+}
+
+img {
+    width: 100%;
 }
