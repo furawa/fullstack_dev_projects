@@ -1,0 +1,42 @@
+//============================
+// Projects page rules
+//============================
+
+.p {
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template: .25fr repeat(6, 1fr) / 1fr;
+    text-align: center;
+
+    @include e(project1) {
+        background-image: url("../images/projects/bike_project.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include e(project2) {
+        background-image: url("../images/projects/ecommerce_project.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include e(project3) {
+        background-image: url("../images/projects/undernutrition_project.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include e(project4) {
+        background-image: url("../images/projects/weratedogs_project.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include e(project5) {
+        background-image: url("../images/projects/co2_emission_project.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include e(project6) {
+        background-image: url("../images/projects/app_project.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
