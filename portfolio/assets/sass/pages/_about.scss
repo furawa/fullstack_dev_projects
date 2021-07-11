@@ -23,3 +23,61 @@
         grid-row: 3 /span 1;
     }
 }
+
+
+// My experiences rules
+
+.experiences {
+    h2 {
+        margin-bottom: em(30px);
+    }
+    summary {
+        border-radius: em(4px);
+        cursor: pointer;
+        text-align: left;
+        border: 1px solid $black;
+        margin-bottom: em(10px);
+        padding: em(10px);
+        transition: all 0.5s ease-in-out;
+    }
+   
+    details[open] summary {
+        margin-bottom: em(35px);
+    }
+    @include e(wrapper) {
+        position: relative;
+    }
+    @include e(detail) {
+        // width: 100%;
+        margin-bottom: em(100px);
+        display: flex;
+        // &::after {
+        //     content:"\2299";
+        //     position: absolute;
+        //     right: 25%;
+        //     font-size: em(24px);
+        // }
+        &::before {
+            content:"";
+            width: em(2px);
+            background-color: rgba($grey, 0.1);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+        }
+        
+    }
+    details {
+        width: 45%;
+    }
+}
+
+.experiences__detail:nth-child(even) {
+    justify-content: flex-end;
+    
+}
+
+.experiences__detail:not(:nth-child(even)) {
+    justify-content: flex-start;
+}
