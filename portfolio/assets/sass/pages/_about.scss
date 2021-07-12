@@ -81,3 +81,16 @@
 .experiences__detail:not(:nth-child(even)) {
     justify-content: flex-start;
 }
+
+// My Vision rules
+
+.vision {
+    display: Grid;
+    grid-template: 0.125fr 1fr / 1fr;
+    height: 100vh;
+
+    p {
+        width: 80%;
+        margin: 0 auto;
+    };
+}
