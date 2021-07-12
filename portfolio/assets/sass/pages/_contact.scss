@@ -2,8 +2,17 @@
 // Rules for the Contact page
 //=================================
 
-#contact {
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include e(address) {
+        display: none;
+    }
+    @include e(phone) {
+        display: none;
+    }
+    @include e(email) {
+        display: none;
+    }
 }
