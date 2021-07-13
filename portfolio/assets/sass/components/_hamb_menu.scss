@@ -3,7 +3,7 @@
 //================================
 
 #hamb_menu{
-    display: none;
+    display: none; /* Hide the checkbox */
 }
 
 .menu {
@@ -21,7 +21,7 @@
         transition: 0.4s ease;
         margin-bottom: em(5px);
 
-        &:nth-child(1) {
+        &:first-child {
             margin-top: em(7px);
         }
 
