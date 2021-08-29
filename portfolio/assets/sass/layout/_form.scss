@@ -7,22 +7,20 @@
     border: em(3px) solid $black;
     border-radius: em(14px);
     background: $white;
+    font-size: em(14px);
 
     @include e(label){
+        align-self: flex-start;
         display: block;
         position: relative;
         top: em(24px);
-        left: -35%;
-        font-size: em(14px);
-        // margin-bottom: em(10px);
+        margin-left: 8%;
     }
 
     @include e(input){
         width: 80%;
         font-size: em(18px);
         padding: em(15px, 18px);
-        // margin-bottom: em(20px, 18px);
-        // border-bottom: em(6px) solid palette(grey, xx-light);
         border-radius: em(14px);
         background: palette(grey, xx-light);
         color: palette(black, dark);
@@ -34,9 +32,7 @@
         }
 
         &::placeholder{
-            // position: absolute;
-            // top: 60%;
-            font-size: em(14px);
+            font-size: em(13px);
         }
     }
     @include e(btn) {
