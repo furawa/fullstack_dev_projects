@@ -265,6 +265,7 @@ nav a:hover {
   min-height: 100vh;
   grid-template: 0.25fr repeat(6, 1fr)/1fr;
   text-align: center;
+  margin-bottom: 3.125em;
 }
 .p__project1 {
   background-image: url("../images/projects/bike_project.png");
@@ -297,10 +298,15 @@ nav a:hover {
   background-repeat: no-repeat;
 }
 
+#about h2 {
+  margin-bottom: 1.25em;
+}
+
 .strengths {
   display: grid;
   grid-template: 0.25fr repeat(3, 1fr)/repeat(2, 1fr);
-  gap: 3.125em 1.875em;
+  gap: 0.625em 1.25em;
+  margin-bottom: 50px;
 }
 .strengths h3 {
   grid-column: 1/span 2;
@@ -309,6 +315,7 @@ nav a:hover {
   display: block;
 }
 .strengths--right {
+  float: right;
   grid-column: 2/span 1;
   grid-row: 3/span 1;
 }
@@ -320,8 +327,8 @@ nav a:hover {
   text-align: center;
 }
 
-.experiences h2 {
-  margin-bottom: 1.875em;
+.experiences h3 {
+  margin-bottom: 3.125em;
 }
 .experiences summary {
   border-radius: 0.25em;
