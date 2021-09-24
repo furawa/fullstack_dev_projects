@@ -8,6 +8,7 @@
     min-height: 100vh;
     grid-template: .25fr repeat(6, 1fr) / 1fr;
     text-align: center;
+    margin-bottom: em(50px);
 
     @include e(project1) {
         background-image: url("../images/projects/bike_project.png");
