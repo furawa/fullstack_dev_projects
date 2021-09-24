@@ -94,11 +94,23 @@
 
 .vision {
     display: Grid;
-    grid-template: 0.125fr 1fr / 1fr;
+    grid-template: 0.125fr 0.5fr 0.5fr / 1fr;
     height: 100vh;
-
+    
     p {
         width: 80%;
         margin: 0 auto;
-    };
+        
+    }
+    img {
+        max-width: 50%;
+        margin: 0 auto;
+        display: block;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+
+
+    }
 }
