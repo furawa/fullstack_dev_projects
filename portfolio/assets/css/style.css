@@ -191,7 +191,7 @@ nav a:hover {
   margin-left: 3em;
 }
 .form__input {
-  max-width: 80%;
+  max-width: 90%;
   font-size: 1.125em;
   padding: 0.8333333333em;
   border-radius: 0.875em;
@@ -372,18 +372,30 @@ nav a:hover {
 
 .vision {
   display: Grid;
-  grid-template: 0.125fr 1fr/1fr;
+  grid-template: 0.125fr 0.5fr 0.5fr/1fr;
   height: 100vh;
 }
 .vision p {
   width: 80%;
   margin: 0 auto;
 }
+.vision img {
+  max-width: 50%;
+  margin: 0 auto;
+  display: block;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
 
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.contact h2 {
+  margin-bottom: 3.125em;
 }
 .contact__address {
   display: none;
