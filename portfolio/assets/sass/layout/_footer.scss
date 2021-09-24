@@ -1,0 +1,27 @@
+//===================================
+// Footer rules
+//===================================
+
+.footer {
+    position: relative;
+    display: flex;
+    height: em(50px);
+    background: $grey;
+    color: $white;
+    font-size: em(12px);
+    align-items: center;
+    a {
+        width: em(30px);
+        height: em(30px);
+    }
+    @include e(lin) {
+        position: absolute;
+        right: 1%;
+    }
+    @include e(git) {
+        position: absolute;
+        right: 8%;
+    }
+}
+
+
