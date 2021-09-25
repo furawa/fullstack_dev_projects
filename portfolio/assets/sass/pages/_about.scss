@@ -1,8 +1,10 @@
-//=====================================
-// About me page rules
-//=====================================
+/*=====================================
+ About me page rules
+ =====================================*/
 
-// My strengths rules
+
+/* My strengths rules */ 
+
 #about h2 {
     margin-bottom: em(20px);
 }
@@ -33,7 +35,7 @@
 }
 
 
-// My experiences rules
+/* My experiences rules */
 
 .experiences {
     h3 {
@@ -90,7 +92,7 @@
     justify-content: flex-start;
 }
 
-// My Vision rules
+/* My Vision rules */
 
 .vision {
     display: Grid;
