@@ -6,6 +6,9 @@
     display: none; /* Hide the checkbox */
 }
 
+.menu span {
+    display: block;
+}
 .menu {
     width: em(40px);
     height: em(40px);
