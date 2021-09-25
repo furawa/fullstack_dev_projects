@@ -66,3 +66,12 @@ $path--rel       : "../images";
 // Margins
 
 $margin-bottom-page  : 50px;
+
+// Breakpoints for responsive design
+
+$breakpoins: (
+    mobile: 480px,
+    tablet: 768px,
+    laptop: 1024px,
+    desktop: 1600px
+);
