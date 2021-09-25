@@ -103,14 +103,12 @@
         
     }
     img {
-        max-width: 50%;
+        max-width: em(200px);
         margin: 0 auto;
         display: block;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
         border-bottom-left-radius: 5%;
         border-bottom-right-radius: 5%;
-
-
     }
 }
