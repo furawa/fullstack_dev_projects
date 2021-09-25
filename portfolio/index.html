@@ -15,26 +15,28 @@
             <h1  class="header__logo"><a href="#home">Frank Pouassi</a></h1>
             <input type="checkbox" id="hamb_menu">
             <label for="hamb_menu" class="menu">
-                <div class="menu__line"></div>
-                <div class="menu__line"></div>
-                <div class="menu__line"></div>
+                <span class="menu__line"></span> <!--Necessary to use span instead of div to validate html-->
+                <span class="menu__line"></span> <!--Cannot use div inside label tag in this context-->
+                <span class="menu__line"></span>
             </label>
             <nav>
                 <ul>
-                    <li nav__link nav__link--active><a href="index.html">Home</a></li>
-                    <li nav__link><a href="#projects">Projects</a></li>
-                    <li nav__link><a href="#about">About</a></li>
-                    <li nav__link><a href="#contact">Contact</a></li>
+                    <li class="nav__link nav__link--active"><a href="index.html">Home</a></li>
+                    <li class="nav__link"><a href="#projects">Projects</a></li>
+                    <li class="nav__link"><a href="#about">About</a></li>
+                    <li class="nav__link"><a href="#contact">Contact</a></li>
                 </ul>   
             </nav>
         </div>
-    <!--Main presentation-->
-        <main class="main">
-            <p class="main__p">Hi, I'm <span>Steff</span>.<br>A FullStack developer &amp; Data Analyst</p>
-            <p class="main__p--sub">I can A/B test the webpages that I created first with a Mobile First approach and Accessibility.</p>
-            <button onclick="window.location.href='#about'" class="btn main__btn">Learn More</button>
-        </main>
     </header>
+
+    <!--Main presentation-->
+    <main class="main"></header>
+        <p class="main__p">Hi, I'm <span>Steff</span>.<br>A FullStack developer &amp; Data Analyst</p>
+        <p class="main__p--sub">I can A/B test the webpages that I created first with a Mobile First approach and Accessibility.</p>
+        <button onclick="window.location.href='#about'" class="btn main__btn">Learn More</button>
+    </main>
+    
 
     <!--Projects section-->
     <section class="p" id="projects">
@@ -151,15 +153,15 @@
     <!--contact section-->
     <section id="contact" class="contact">
         <h2>Get In Touch</h2>
-        <form class="form" action="index.html", method="POST">
-            <label class="form__label"for="name">Name*</label>
-            <input class="form__input" type="text", id="name", name="user_name", placeholder="Marco Rossi" required>
+        <form class="form" action="index.html" method="POST">
+            <label class="form__label" for="name">Name*</label>
+            <input class="form__input" type="text" id="name" name="user_name" placeholder="Marco Rossi" required>
 
             <label class="form__label" for="email">Email*</label>
-            <input class="form__input" type="email" id="email", name="user_email", placeholder="company@example.com" required>
+            <input class="form__input" type="email" id="email" name="user_email" placeholder="company@example.com" required>
 
             <label class="form__label" for="phone">Phone</label>
-            <input class="form__input" type="tel" id="phone", pattern="[+]*[0-9]+" name="user_phone_number", placeholder="+12345643212">
+            <input class="form__input" type="tel" id="phone" pattern="[+]*[0-9]+" name="user_phone_number" placeholder="+12345643212">
             <label class="form__lab" for="job_role">Job Role</label>
             <select class="form__input" id="job_role" required autocomplete="off">
                 <option value="">--Please choose an option--</option>
@@ -172,14 +174,14 @@
                     <option value="Data Analysis">Data Analysis</option>
                     <option value="Data Scientist">Data Scientist</option>
                 </optgroup>
-                <optgroup label="Other">>
+                <optgroup label="Other">
                     <option value="freelance">Freelance</option>
                     <option value="ninja">Ninja-Versatile</option>
                 </optgroup>
             </select>
 
             <label class="form__label" for="message">Message*</label>
-            <textarea class="form__input" id="message", name="user_message", placeholder="Your message here...", rows="6" required></textarea>
+            <textarea class="form__input" id="message" name="user_message" placeholder="Your message here..." rows="6" required></textarea>
             <button class="form__btn btn" type="submit">Send</button> <!--the reset type will clear the form-->
         </form>
         <div class="contact__address">
