@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&family=Rubik&family=Shrikhand&display=swap");
 *,
-*::before *::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -60,6 +61,10 @@ img {
 #hamb_menu {
   display: none;
   /* Hide the checkbox */
+}
+
+.menu span {
+  display: block;
 }
 
 .menu {
@@ -380,7 +385,7 @@ nav a:hover {
   margin: 0 auto;
 }
 .vision img {
-  max-width: 50%;
+  max-width: 12.5em;
   margin: 0 auto;
   display: block;
   border-top-left-radius: 50%;
