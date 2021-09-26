@@ -25,7 +25,7 @@ h1 {
         font-size: em(20px);
     }
     @include breakpoint(desktop) {
-        font-size: em(22px);
+        font-size: em(24px);
     }
     a {
         text-decoration: none;
@@ -50,7 +50,7 @@ h2 {
         font-size: em(28px);
     }
     @include breakpoint(desktop) {
-        font-size: em(30px);
+        font-size: em(32px);
     }
 }
 
@@ -63,7 +63,7 @@ h3 {
         font-size: em(24px);
     }
     @include breakpoint(desktop) {
-        font-size: em(26px);
+        font-size: em(28px);
     }
 }
 
@@ -76,7 +76,7 @@ h4 {
         font-size: em(22px);
     }
     @include breakpoint(desktop) {
-        font-size: em(24px);
+        font-size: em(26px);
     }
 }
 img {
