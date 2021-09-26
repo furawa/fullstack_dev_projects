@@ -18,6 +18,15 @@ body {
 
 h1 {
     font-family: $font-family--logo;
+    @include breakpoint(tablet) {
+        font-size: em(18px);
+    }
+    @include breakpoint(laptop) {
+        font-size: em(20px);
+    }
+    @include breakpoint(desktop) {
+        font-size: em(22px);
+    }
     a {
         text-decoration: none;
         color: $black;
@@ -34,14 +43,41 @@ h2, h3, h4{
 }
 h2 {
     font-size: em(24px);
+    @include breakpoint(tablet) {
+        font-size: em(26px);
+    }
+    @include breakpoint(laptop) {
+        font-size: em(28px);
+    }
+    @include breakpoint(desktop) {
+        font-size: em(30px);
+    }
 }
 
 h3 {
     font-size: em(20px);
+    @include breakpoint(tablet) {
+        font-size: em(22px);
+    }
+    @include breakpoint(laptop) {
+        font-size: em(24px);
+    }
+    @include breakpoint(desktop) {
+        font-size: em(26px);
+    }
 }
 
 h4 {
     font-size: em(18px);
+    @include breakpoint(tablet) {
+        font-size: em(20px);
+    }
+    @include breakpoint(laptop) {
+        font-size: em(22px);
+    }
+    @include breakpoint(desktop) {
+        font-size: em(24px);
+    }
 }
 img {
     width: 100%;
