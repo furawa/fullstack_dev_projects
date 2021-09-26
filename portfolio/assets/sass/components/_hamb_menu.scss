@@ -43,6 +43,10 @@
             }
         }
     }
+    /* From the laptop width we don't see the hamburger menu anymore */
+    @include breakpoint(laptop) {
+        display: none;
+    }
 }
 #hamb_menu:checked + .menu {
     .menu__line {
