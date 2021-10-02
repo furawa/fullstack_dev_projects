@@ -14,6 +14,9 @@ body {
     font-family: $font-family--primary;
     background-color: palette(grey, xx-light);
     color: palette(black, dark);
+    @include breakpoint(laptop) {
+        font-size: em(18px);
+    }
 }
 
 h1 {
