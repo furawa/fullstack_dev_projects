@@ -85,6 +85,10 @@
 /* My experiences rules */
 
 .experiences {
+    @include breakpoint(laptop) {
+        width: 80%;
+        margin: auto;
+    }
     h3 {
         margin-bottom: em($margin-bottom-page);
     }
@@ -145,10 +149,18 @@
     display: Grid;
     grid-template: 0.125fr 0.5fr 0.5fr / 1fr;
     height: 100vh;
+    @include breakpoint(laptop) {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: $margin-bottom-page * 3;
+    }
     
     p {
         width: 80%;
         margin: 0 auto;
+        padding: em(50px) 0;
         
     }
     img {
