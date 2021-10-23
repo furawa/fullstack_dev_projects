@@ -5,11 +5,15 @@
 .footer {
     position: relative;
     display: flex;
-    height: em(50px);
+    height: em(70px);
     background: $grey;
     color: $white;
     font-size: em(12px);
     align-items: center;
+    @include breakpoint(laptop) {
+        // height: em(80px);
+        font-size: 125%;
+    }
     a {
         width: em(30px);
         height: em(30px);
@@ -17,6 +21,7 @@
     @include e(lin) {
         position: absolute;
         right: 1%;
+
     }
     @include e(git) {
         position: absolute;
