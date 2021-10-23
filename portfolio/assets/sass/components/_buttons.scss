@@ -18,11 +18,11 @@
         height: em(70px);
         font-size: em(18px);
     }
-    @include breakpoint(desktop) {
-        width: em(140px);
-        height: em(80px);
-        font-size: em(20px);
-    }
+    // @include breakpoint(desktop) {
+    //     width: em(140px);
+    //     height: em(80px);
+    //     font-size: em(20px);
+    // }
 }
 
 .btn:hover {
