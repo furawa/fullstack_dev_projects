@@ -15,7 +15,7 @@
     gap: em(10px) em(20px);
     margin-bottom: $margin-bottom-page;
     @include breakpoint(laptop) {
-        width: 90%;
+        width: 80%;
         margin: auto;
         grid-template: .25fr repeat(2, 1fr) / repeat(3, 1fr);
         gap: em(15px) em(30px);
@@ -87,7 +87,7 @@
 
 .experiences {
     @include breakpoint(laptop) {
-        width: 80%;
+        width: 70%;
         margin: auto;
     }
     h3 {
@@ -162,6 +162,9 @@
         width: 80%;
         margin: 0 auto;
         padding: em(50px) 0;
+        @include breakpoint(laptop) {
+            width: 50%;
+        }
         
     }
     img {
