@@ -7,21 +7,33 @@
     flex-direction: column;
     align-items: center;
     min-width: 300px;
+    max-width: 70%;
     border: em(3px) solid $black;
     border-radius: em(14px);
     background: $white;
     font-size: em(14px);
+    justify-content: space-around;
 
     @include e(label){
         align-self: flex-start;
         display: block;
         position: relative;
-        top: em(24px);
-        margin-left: em(48px);
+        top: em(22px);
+        margin-left:em(30px);
+        @include breakpoint(laptop) {
+            top: 3%;
+            margin-left: 8%;
+        }
+        
+    }
+    textarea {
+        @include breakpoint(laptop) {
+            height: 25%;   
+        }
     }
 
     @include e(input){
-        max-width: 90%;
+        width: 90%;
         font-size: em(18px);
         padding: em(15px, 18px);
         border-radius: em(14px);
@@ -29,6 +41,10 @@
         color: palette(black, dark);
         font-weight: $font-weight--light;
         border: em(2px) solid $black;
+        @include breakpoint(laptop) {
+            height: 10%;
+            top: em(30px);
+        }
 
         &:focus {
             outline: none;

@@ -14,9 +14,29 @@ body {
   background-color: #e3e4e5;
   color: black;
 }
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.125em;
+  }
+}
 
 h1 {
   font-family: "Shrikhand", cursive, serif;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 1.125em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 1.25em;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h1 {
+    font-size: 1.5em;
+  }
 }
 h1 a {
   text-decoration: none;
@@ -35,13 +55,58 @@ h2, h3, h4 {
 h2 {
   font-size: 1.5em;
 }
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.625em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 1.75em;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h2 {
+    font-size: 2em;
+  }
+}
 
 h3 {
   font-size: 1.25em;
 }
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.375em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h3 {
+    font-size: 1.75em;
+  }
+}
 
 h4 {
   font-size: 1.125em;
+}
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 1.25em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h4 {
+    font-size: 1.375em;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h4 {
+    font-size: 1.625em;
+  }
 }
 
 img {
@@ -57,6 +122,27 @@ img {
   border-radius: 0.625em;
   background: black;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 7.5em;
+    height: 4.375em;
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    width: 7.5em;
+    height: 4.375em;
+    font-size: 1.125em;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .btn {
+    width: 8.75em;
+    height: 5em;
+    font-size: 1.25em;
+  }
 }
 
 .btn:hover {
@@ -80,6 +166,7 @@ img {
   width: 2.5em;
   height: 2.5em;
   margin-right: 0.3125em;
+  /* From the laptop width we don't see the hamburger menu anymore */
 }
 .menu__line {
   position: relative;
@@ -103,6 +190,11 @@ img {
   border-radius: 0.3125em;
   transition: 0.4s ease;
   opacity: 0;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
 }
 
 #hamb_menu:checked + .menu .menu__line:first-child, #hamb_menu:checked + .menu .menu__line:nth-child(3) {
@@ -204,20 +296,33 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   min-width: 300px;
+  max-width: 70%;
   border: 0.1875em solid #0b0b0b;
   border-radius: 0.875em;
   background: #fff;
   font-size: 0.875em;
+  justify-content: space-around;
 }
 .form__label {
   align-self: flex-start;
   display: block;
   position: relative;
-  top: 1.5em;
-  margin-left: 3em;
+  top: 1.375em;
+  margin-left: 1.875em;
+}
+@media screen and (min-width: 1024px) {
+  .form__label {
+    top: 3%;
+    margin-left: 8%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .form textarea {
+    height: 25%;
+  }
 }
 .form__input {
-  max-width: 90%;
+  width: 90%;
   font-size: 1.125em;
   padding: 0.8333333333em;
   border-radius: 0.875em;
@@ -225,6 +330,12 @@ nav a:hover {
   color: black;
   font-weight: 300;
   border: 0.125em solid #0b0b0b;
+}
+@media screen and (min-width: 1024px) {
+  .form__input {
+    height: 10%;
+    top: 1.875em;
+  }
 }
 .form__input:focus {
   outline: none;
@@ -249,16 +360,44 @@ nav a:hover {
   top: 30%;
   left: 10%;
 }
+@media screen and (min-width: 768px) {
+  .main {
+    width: 60%;
+    left: 20%;
+  }
+}
 .main__p {
   grid-row: 1/span 1;
   font-size: 1.5em;
   align-self: end;
+}
+@media screen and (min-width: 1024px) {
+  .main__p {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main__p {
+    font-size: 3.125em;
+  }
 }
 .main__p span {
   font-family: "Shrikhand", cursive, serif;
 }
 .main__p--sub {
   grid-row: 2/span 1;
+}
+@media screen and (min-width: 1024px) {
+  .main__p--sub {
+    font-size: 1.625em;
+    font-style: italic;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main__p--sub {
+    font-size: 2em;
+    font-style: italic;
+  }
 }
 .main__btn {
   grid-row: 3/span 1;
@@ -302,35 +441,95 @@ nav a:hover {
   text-align: center;
   margin-bottom: 3.125em;
 }
+@media screen and (min-width: 768px) {
+  .p {
+    grid-template: 0.25fr repeat(3, 1fr)/repeat(2, 1fr);
+    grid-template-areas: "h2 h2";
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p {
+    grid-template: 0.25fr repeat(3, 1fr)/repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 1.25em;
+    grid-template-areas: "h2 h2 h2" "p1 p4 p3" "p2 p4 p3" "p6 p5 p3";
+  }
+}
+@media screen and (min-width: 1600px) {
+  .p {
+    grid-template: 0.25fr repeat(3, minmax(300px, 400px))/repeat(3, minmax(300px, 400px));
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "h2 h2 h2" "p1 p4 p3" "p2 p4 p3" "p6 p5 p3";
+  }
+}
 .p__project1 {
   background-image: url("../images/projects/bike_project.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .p__project1 {
+    grid-area: p1;
+  }
 }
 .p__project2 {
   background-image: url("../images/projects/ecommerce_project.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 1024px) {
+  .p__project2 {
+    grid-area: p2;
+  }
+}
 .p__project3 {
   background-image: url("../images/projects/undernutrition_project.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .p__project3 {
+    grid-area: p3;
+  }
 }
 .p__project4 {
   background-image: url("../images/projects/weratedogs_project.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 1024px) {
+  .p__project4 {
+    grid-area: p4;
+  }
+}
 .p__project5 {
   background-image: url("../images/projects/co2_emission_project.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 1024px) {
+  .p__project5 {
+    grid-area: p5;
+  }
+}
 .p__project6 {
   background-image: url("../images/projects/app_project.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .p__project6 {
+    grid-area: p6;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p h2 {
+    grid-area: h2;
+    justify-self: center;
+    align-self: start;
+  }
 }
 
 /*=====================================
@@ -347,11 +546,57 @@ nav a:hover {
   gap: 0.625em 1.25em;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1024px) {
+  .strengths {
+    width: 90%;
+    margin: auto;
+    grid-template: 0.25fr repeat(2, 1fr)/repeat(3, 1fr);
+    gap: 0.9375em 1.875em;
+  }
+  .strengths__fig1 {
+    grid-column: 1/span 1;
+  }
+  .strengths__p1 {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+  }
+  .strengths__fig2 {
+    grid-column: 2/span 1;
+  }
+  .strengths__fig3 {
+    grid-column: 3/span 1;
+  }
+  .strengths__p3 {
+    grid-column: 3/span 1;
+    grid-row: 3/span 1;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .strengths {
+    width: 70%;
+    margin: auto;
+  }
+}
 .strengths h3 {
   grid-column: 1/span 2;
 }
+@media screen and (min-width: 1024px) {
+  .strengths h3 {
+    grid-column: 1/span 3;
+  }
+}
 .strengths img {
   display: block;
+}
+@media screen and (min-width: 1024px) {
+  .strengths img {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .strengths img {
+    height: 500px;
+  }
 }
 .strengths--right {
   float: right;
@@ -362,11 +607,23 @@ nav a:hover {
   grid-column: 1/span 1;
   grid-row: 3/span 1;
 }
+@media screen and (min-width: 1024px) {
+  .strengths--left {
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+  }
+}
 .strengths figcaption {
   text-align: center;
 }
 
 /* My experiences rules */
+@media screen and (min-width: 1024px) {
+  .experiences {
+    width: 80%;
+    margin: auto;
+  }
+}
 .experiences h3 {
   margin-bottom: 3.125em;
 }
@@ -416,9 +673,19 @@ nav a:hover {
   grid-template: 0.125fr 0.5fr 0.5fr/1fr;
   height: 100vh;
 }
+@media screen and (min-width: 1024px) {
+  .vision {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+}
 .vision p {
   width: 80%;
   margin: 0 auto;
+  padding: 3.125em 0;
 }
 .vision img {
   max-width: 12.5em;
@@ -437,18 +704,98 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .contact {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    grid-template: 0.25fr repeat(3, 1fr)/repeat(2, 1fr);
+    grid-template-areas: "h2 h2" "form address" "form phone" "form email";
+    column-gap: 3.125em;
+    row-gap: 1.875em;
+    align-items: stretch;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact .form {
+    grid-area: form;
+  }
+}
+.contact img {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+  width: 50%;
+  height: 50%;
+  align-self: center;
+  justify-self: center;
+}
+.contact h4 {
+  grid-column: 1/span 1;
+  grid-row: 2/span 1;
+  white-space: nowrap;
 }
 .contact h2 {
-  margin-bottom: 3.125em;
+  margin-bottom: 1.875em;
+}
+@media screen and (min-width: 1024px) {
+  .contact h2 {
+    grid-area: h2;
+  }
+}
+.contact address {
+  align-self: center;
+  justify-self: center;
+  grid-column: 2/span 1;
+  grid-row: 1/span 2;
+}
+.contact p {
+  grid-column: 2/span 1;
+  grid-row: 1/span 2;
+  align-self: center;
+  justify-self: center;
+  word-wrap: break-word;
 }
 .contact__address {
   display: none;
 }
+@media screen and (min-width: 1024px) {
+  .contact__address {
+    display: grid;
+    grid-area: address;
+    grid-template: 0.25fr 0.25fr/repeat(2, 1fr);
+    gap: 0.625em;
+    border: 3px solid #0b0b0b;
+    border-radius: 14px;
+  }
+}
 .contact__phone {
   display: none;
 }
+@media screen and (min-width: 1024px) {
+  .contact__phone {
+    display: grid;
+    grid-area: phone;
+    grid-template: 0.25fr 0.25fr/repeat(2, 1fr);
+    gap: 0.625em;
+    border: 3px solid #0b0b0b;
+    border-radius: 14px;
+  }
+}
 .contact__email {
   display: none;
+}
+@media screen and (min-width: 1024px) {
+  .contact__email {
+    display: grid;
+    grid-area: email;
+    grid-template: 0.25fr 0.25fr/repeat(2, 1fr);
+    gap: 0.625em;
+    border: 3px solid #0b0b0b;
+    border-radius: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
