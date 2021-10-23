@@ -10,8 +10,7 @@
     color: $white;
     font-size: em(12px);
     align-items: center;
-    @include breakpoint(laptop) {
-        // height: em(80px);
+    @include breakpoint(tablet) {
         font-size: 125%;
     }
     a {
