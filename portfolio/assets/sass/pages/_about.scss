@@ -62,10 +62,10 @@
     @include e(p1) {
         width: fit-content;
         height: fit-content;
-        animation: appear-right $anim-duration ease-in-out 2s;
-        @include breakpoint(laptop) {
-            animation: appear-left $anim-duration ease-in-out;
-        }
+        // @include breakpoint(laptop) {
+        //     animation: appear-left $anim-duration ease-in-out;
+        // }
+        // Animation needs Js to be more effective so that it plays after scrolling
     }
     @include m(right) {
         float: right;
@@ -76,17 +76,19 @@
     @include m(left) {
         grid-column: 1 / span 1;
         grid-row: 3 /span 1;
-        animation: appear-left $anim-duration ease-in-out 4s;
         @include breakpoint(laptop) {
             grid-column: 2 / span 1;
             grid-row: 3 / span 1;
-            animation: appear-bottom $anim-duration ease-in-out;
+            // animation: appear-bottom $anim-duration ease-in-out;
+        // Animation needs Js to be more effective so that it plays after scrolling
+
         }
     }
     @include e(p3) {
-        animation: appear-right $anim-duration ease-in-out 8s;
         @include breakpoint(laptop) {
-            animation: appear-right $anim-duration ease-in-out;
+            // animation: appear-right $anim-duration ease-in-out;
+        // Animation needs Js to be more effective so that it plays after scrolling
+
         }
     }
     figcaption {
@@ -189,7 +191,10 @@
         border-bottom-left-radius: 5%;
         border-bottom-right-radius: 5%;
         @include breakpoint(laptop) {
-            animation: fade-in $anim-duration ease-in-out;
+            @media(prefers-reduced-motion: no-preference) {
+                    animation: fade-in $anim-duration ease-in-out;
+            }
         }
     }
+    
 }

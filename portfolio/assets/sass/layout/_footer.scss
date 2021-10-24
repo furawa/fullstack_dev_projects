@@ -17,12 +17,14 @@
     div {
         display: flex;
         justify-content: space-around;
-        a {
+        align-items: center;
+        width: em(120px);
+    }
+    @include e(lin) {
+        img {
             width: em(40px);
             height: em(40px);
         }
-    }
-    @include e(lin) {
         @include breakpoint(laptop) {
             transition: .75s;
             &:hover {
@@ -32,6 +34,10 @@
         }
     }
     @include e(git) {
+        img {
+            width: em(50px);
+            height: em(50px);
+        }
         @include breakpoint(laptop) {
             transition: .75s;
             &:hover {

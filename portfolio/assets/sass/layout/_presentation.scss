@@ -46,10 +46,13 @@
         justify-self: center;
         align-self: center;
         @include breakpoint(laptop) {
-            animation: pulse-button 1s infinite;
-            &:hover {
-                animation-play-state: paused;
+            @media (prefers-reduced-motion : no-preference) {
+                animation: pulse-button 1s infinite;
+                &:hover {
+                    animation-play-state: paused;
+                }
             }
+            
         }
     }
 }

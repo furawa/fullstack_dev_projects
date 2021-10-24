@@ -32,9 +32,17 @@
         width: 50%;
         height: 50%;
         align-self: center;
-        justify-self: center;
+        justify-self: flex-start;
+        transition: .75s;
+        @include breakpoint(laptop) {
+            &:hover {
+                // transform: rotateY(360deg);
+                filter: invert(43%) sepia(57%) saturate(6312%) hue-rotate(346deg) brightness(96%) contrast(79%);
+            }
+        }
     }
     h4 {
+        justify-self: flex-start;
         grid-column: 1 / span 1;
         grid-row: 2 / span 1;
         white-space: nowrap;
@@ -90,6 +98,12 @@
             gap: em(10px);
             border: $container-border;
             border-radius: $container-border-radius;
+            img {
+                &:hover {
+                    filter: invert(43%) sepia(57%) saturate(6312%) hue-rotate(346deg) brightness(96%) contrast(79%);
+                }
+                
+            }
         }
     }
 }

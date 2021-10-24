@@ -460,7 +460,7 @@ nav a:hover {
   justify-self: center;
   align-self: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
   .main__btn {
     animation: pulse-button 1s infinite;
   }
@@ -490,8 +490,10 @@ nav a:hover {
 .footer div {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  width: 7.5em;
 }
-.footer div a {
+.footer__lin img {
   width: 2.5em;
   height: 2.5em;
 }
@@ -503,6 +505,10 @@ nav a:hover {
     transform: rotateY(360deg);
     filter: invert(29%) sepia(94%) saturate(1348%) hue-rotate(176deg) brightness(93%) contrast(101%);
   }
+}
+.footer__git img {
+  width: 3.125em;
+  height: 3.125em;
 }
 @media screen and (min-width: 1024px) {
   .footer__git {
@@ -687,12 +693,6 @@ nav a:hover {
 .strengths__p1 {
   width: fit-content;
   height: fit-content;
-  animation: appear-right 4s ease-in-out 2s;
-}
-@media screen and (min-width: 1024px) {
-  .strengths__p1 {
-    animation: appear-left 4s ease-in-out;
-  }
 }
 .strengths--right {
   float: right;
@@ -702,21 +702,11 @@ nav a:hover {
 .strengths--left {
   grid-column: 1/span 1;
   grid-row: 3/span 1;
-  animation: appear-left 4s ease-in-out 4s;
 }
 @media screen and (min-width: 1024px) {
   .strengths--left {
     grid-column: 2/span 1;
     grid-row: 3/span 1;
-    animation: appear-bottom 4s ease-in-out;
-  }
-}
-.strengths__p3 {
-  animation: appear-right 4s ease-in-out 8s;
-}
-@media screen and (min-width: 1024px) {
-  .strengths__p3 {
-    animation: appear-right 4s ease-in-out;
   }
 }
 .strengths figcaption {
@@ -807,7 +797,7 @@ nav a:hover {
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
   .vision img {
     animation: fade-in 4s ease-in-out;
   }
@@ -846,9 +836,16 @@ nav a:hover {
   width: 50%;
   height: 50%;
   align-self: center;
-  justify-self: center;
+  justify-self: flex-start;
+  transition: 0.75s;
+}
+@media screen and (min-width: 1024px) {
+  .contact img:hover {
+    filter: invert(43%) sepia(57%) saturate(6312%) hue-rotate(346deg) brightness(96%) contrast(79%);
+  }
 }
 .contact h4 {
+  justify-self: flex-start;
   grid-column: 1/span 1;
   grid-row: 2/span 1;
   white-space: nowrap;
@@ -911,6 +908,9 @@ nav a:hover {
     gap: 0.625em;
     border: 3px solid #0b0b0b;
     border-radius: 14px;
+  }
+  .contact__email img:hover {
+    filter: invert(43%) sepia(57%) saturate(6312%) hue-rotate(346deg) brightness(96%) contrast(79%);
   }
 }
 
