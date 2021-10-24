@@ -9,21 +9,20 @@
     background: $grey;
     color: $white;
     font-size: em(12px);
+    justify-content: space-between;
     align-items: center;
     @include breakpoint(tablet) {
         font-size: 125%;
     }
-    a {
-        width: em(30px);
-        height: em(30px);
-        @include breakpoint(laptop) {
+    div {
+        display: flex;
+        justify-content: space-around;
+        a {
             width: em(40px);
             height: em(40px);
         }
     }
     @include e(lin) {
-        position: absolute;
-        right: 1%;
         @include breakpoint(laptop) {
             transition: .75s;
             &:hover {
@@ -33,8 +32,6 @@
         }
     }
     @include e(git) {
-        position: absolute;
-        right: 8%;
         @include breakpoint(laptop) {
             transition: .75s;
             &:hover {

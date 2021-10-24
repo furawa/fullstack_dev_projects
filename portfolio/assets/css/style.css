@@ -479,6 +479,7 @@ nav a:hover {
   background: #797e83;
   color: #fff;
   font-size: 0.75em;
+  justify-content: space-between;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
@@ -486,19 +487,13 @@ nav a:hover {
     font-size: 125%;
   }
 }
-.footer a {
-  width: 1.875em;
-  height: 1.875em;
+.footer div {
+  display: flex;
+  justify-content: space-around;
 }
-@media screen and (min-width: 1024px) {
-  .footer a {
-    width: 2.5em;
-    height: 2.5em;
-  }
-}
-.footer__lin {
-  position: absolute;
-  right: 1%;
+.footer div a {
+  width: 2.5em;
+  height: 2.5em;
 }
 @media screen and (min-width: 1024px) {
   .footer__lin {
@@ -508,10 +503,6 @@ nav a:hover {
     transform: rotateY(360deg);
     filter: invert(29%) sepia(94%) saturate(1348%) hue-rotate(176deg) brightness(93%) contrast(101%);
   }
-}
-.footer__git {
-  position: absolute;
-  right: 8%;
 }
 @media screen and (min-width: 1024px) {
   .footer__git {
