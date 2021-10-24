@@ -1,4 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&family=Rubik&family=Shrikhand&display=swap");
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes pulse-button {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
+@keyframes appear-left {
+  0% {
+    transform: translate(-999px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes appear-right {
+  0% {
+    transform: translate(999px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes appear-bottom {
+  0% {
+    transform: translate(0px, 300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
 /*==============================
  Basic page configuration
  =============================== */
@@ -137,13 +180,6 @@ img {
     font-size: 1.125em;
   }
 }
-@media screen and (min-width: 1600px) {
-  .btn {
-    width: 8.75em;
-    height: 5em;
-    font-size: 1.25em;
-  }
-}
 
 .btn:hover {
   background: #93989c;
@@ -242,13 +278,33 @@ nav {
   transform: scale(1, 0);
   transition: 0.4s ease-in-out;
 }
+@media screen and (min-width: 1024px) {
+  nav {
+    all: unset;
+    width: 50%;
+  }
+}
 nav ul {
   position: absolute;
   top: 30%;
   left: 40%;
 }
+@media screen and (min-width: 1024px) {
+  nav ul {
+    all: unset;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+  }
+}
 nav li {
   margin-bottom: 1.5em;
+}
+@media screen and (min-width: 1024px) {
+  nav li {
+    margin-bottom: 0;
+    margin: 0 1.875em;
+  }
 }
 nav a {
   text-decoration: none;
@@ -404,6 +460,14 @@ nav a:hover {
   justify-self: center;
   align-self: center;
 }
+@media screen and (min-width: 1024px) {
+  .main__btn {
+    animation: pulse-button 1s infinite;
+  }
+  .main__btn:hover {
+    animation-play-state: paused;
+  }
+}
 
 /*===================================
  Footer rules
@@ -411,23 +475,52 @@ nav a:hover {
 .footer {
   position: relative;
   display: flex;
-  height: 3.125em;
+  height: 4.375em;
   background: #797e83;
   color: #fff;
   font-size: 0.75em;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 125%;
+  }
+}
 .footer a {
   width: 1.875em;
   height: 1.875em;
+}
+@media screen and (min-width: 1024px) {
+  .footer a {
+    width: 2.5em;
+    height: 2.5em;
+  }
 }
 .footer__lin {
   position: absolute;
   right: 1%;
 }
+@media screen and (min-width: 1024px) {
+  .footer__lin {
+    transition: 0.75s;
+  }
+  .footer__lin:hover {
+    transform: rotateY(360deg);
+    filter: invert(29%) sepia(94%) saturate(1348%) hue-rotate(176deg) brightness(93%) contrast(101%);
+  }
+}
 .footer__git {
   position: absolute;
   right: 8%;
+}
+@media screen and (min-width: 1024px) {
+  .footer__git {
+    transition: 0.75s;
+  }
+  .footer__git:hover {
+    transform: rotateY(360deg);
+    filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(30deg) brightness(102%) contrast(104%);
+  }
 }
 
 /*============================
@@ -542,13 +635,14 @@ nav a:hover {
 
 .strengths {
   display: grid;
-  grid-template: 0.25fr repeat(3, 1fr)/repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(min-content, max-content);
   gap: 0.625em 1.25em;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
   .strengths {
-    width: 90%;
+    width: 80%;
     margin: auto;
     grid-template: 0.25fr repeat(2, 1fr)/repeat(3, 1fr);
     gap: 0.9375em 1.875em;
@@ -579,6 +673,7 @@ nav a:hover {
 }
 .strengths h3 {
   grid-column: 1/span 2;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
   .strengths h3 {
@@ -598,6 +693,16 @@ nav a:hover {
     height: 500px;
   }
 }
+.strengths__p1 {
+  width: fit-content;
+  height: fit-content;
+  animation: appear-right 4s ease-in-out 2s;
+}
+@media screen and (min-width: 1024px) {
+  .strengths__p1 {
+    animation: appear-left 4s ease-in-out;
+  }
+}
 .strengths--right {
   float: right;
   grid-column: 2/span 1;
@@ -606,11 +711,21 @@ nav a:hover {
 .strengths--left {
   grid-column: 1/span 1;
   grid-row: 3/span 1;
+  animation: appear-left 4s ease-in-out 4s;
 }
 @media screen and (min-width: 1024px) {
   .strengths--left {
     grid-column: 2/span 1;
     grid-row: 3/span 1;
+    animation: appear-bottom 4s ease-in-out;
+  }
+}
+.strengths__p3 {
+  animation: appear-right 4s ease-in-out 8s;
+}
+@media screen and (min-width: 1024px) {
+  .strengths__p3 {
+    animation: appear-right 4s ease-in-out;
   }
 }
 .strengths figcaption {
@@ -620,7 +735,7 @@ nav a:hover {
 /* My experiences rules */
 @media screen and (min-width: 1024px) {
   .experiences {
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
 }
@@ -687,6 +802,11 @@ nav a:hover {
   margin: 0 auto;
   padding: 3.125em 0;
 }
+@media screen and (min-width: 1024px) {
+  .vision p {
+    width: 50%;
+  }
+}
 .vision img {
   max-width: 12.5em;
   margin: 0 auto;
@@ -695,6 +815,11 @@ nav a:hover {
   border-top-right-radius: 50%;
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .vision img {
+    animation: fade-in 4s ease-in-out;
+  }
 }
 
 /*=================================
