@@ -40,11 +40,16 @@
                 font-style: italic;
             }
         }
-        
     }
     @include e(btn) {
         grid-row: 3 / span 1;
         justify-self: center;
         align-self: center;
+        @include breakpoint(laptop) {
+            animation: pulse-button 1s infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
 }

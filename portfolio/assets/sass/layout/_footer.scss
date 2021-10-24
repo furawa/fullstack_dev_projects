@@ -16,15 +16,32 @@
     a {
         width: em(30px);
         height: em(30px);
+        @include breakpoint(laptop) {
+            width: em(40px);
+            height: em(40px);
+        }
     }
     @include e(lin) {
         position: absolute;
         right: 1%;
-
+        @include breakpoint(laptop) {
+            transition: .75s;
+            &:hover {
+                transform: rotateY(360deg);
+                filter: invert(29%) sepia(94%) saturate(1348%) hue-rotate(176deg) brightness(93%) contrast(101%);
+            }
+        }
     }
     @include e(git) {
         position: absolute;
         right: 8%;
+        @include breakpoint(laptop) {
+            transition: .75s;
+            &:hover {
+                transform: rotateY(360deg);
+                filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(30deg) brightness(102%) contrast(104%);
+            }
+        }
     }
 }
 

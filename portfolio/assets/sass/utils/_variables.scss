@@ -80,3 +80,28 @@ $breakpoins: (
 
 $container-border   : 3px solid $black;
 $container-border-radius    : 14px;
+
+// Animations
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { transform: scale(1); opacity: 1} 
+ }
+@keyframes pulse-button {
+    0% { box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);}
+    100% { box-shadow: 0 0 0 10px rgba(0, 0, 0, 0)};
+    
+}
+ @keyframes appear-left {
+    0%   {transform: translate(-999px, 0);}
+    100% {transform: translate(0, 0);}
+  }
+
+@keyframes appear-right {
+    0%   {transform: translate(999px, 0);}
+    100% {transform: translate(0, 0);}
+}
+@keyframes appear-bottom {
+    0% {transform: translate(0px, 300px);opacity: 0}
+    100% {transform: translate(0, 0);opacity: 1}
+}
+$anim-duration: 4s;
