@@ -162,8 +162,13 @@ img {
 // Rules for the buttons
  ================================ */
 .btn {
+  display: flex;
+  text-decoration: none;
   width: 6.25em;
   height: 3.125em;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.625em;
   background: black;
   color: #fff;
@@ -469,6 +474,7 @@ nav a:hover {
     animation: pulse-button 1s infinite;
   }
   .main__btn:hover {
+    border: 1px solid black;
     animation-play-state: paused;
   }
 }
