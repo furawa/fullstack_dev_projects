@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&family=Rubik&family=Cormorant+Garamond:ital,wght@1,300&display=swap");
 @keyframes fade-in {
   0% {
@@ -643,6 +644,10 @@ nav a:hover {
   margin-bottom: 1.25em;
 }
 
+q {
+  quotes: "„" "“";
+}
+
 .strengths {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -751,18 +756,19 @@ nav a:hover {
 .experiences__wrapper {
   position: relative;
 }
-.experiences__detail {
-  margin-bottom: 6.25em;
-  display: flex;
-}
-.experiences__detail::before {
+.experiences__wrapper::before {
+  /* Create the line in the middle */
   content: "";
-  width: 0.125em;
-  background-color: rgba(121, 126, 131, 0.1);
+  width: 2px;
+  background-color: rgba(121, 126, 131, 0.2);
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
+  right: 50%;
+}
+.experiences__detail {
+  margin-bottom: 6.25em;
+  display: flex;
 }
 .experiences details {
   width: 45%;
