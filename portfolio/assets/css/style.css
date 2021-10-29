@@ -58,7 +58,7 @@ body {
   background-color: #e3e4e5;
   color: black;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   body {
     font-size: 1.125em;
   }
@@ -74,12 +74,12 @@ h1 {
     font-size: 1.125em;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   h1 {
     font-size: 1.25em;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   h1 {
     font-size: 1.5em;
   }
@@ -106,12 +106,12 @@ h2 {
     font-size: 1.625em;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   h2 {
     font-size: 1.75em;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   h2 {
     font-size: 2em;
   }
@@ -125,12 +125,12 @@ h3 {
     font-size: 1.375em;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   h3 {
     font-size: 1.5em;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   h3 {
     font-size: 1.75em;
   }
@@ -144,12 +144,12 @@ h4 {
     font-size: 1.25em;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   h4 {
     font-size: 1.375em;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   h4 {
     font-size: 1.625em;
   }
@@ -181,7 +181,7 @@ img {
     font-size: 1em;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .btn {
     width: 7.5em;
     height: 4.375em;
@@ -235,7 +235,7 @@ img {
   transition: 0.4s ease;
   opacity: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .menu {
     display: none;
   }
@@ -286,7 +286,7 @@ nav {
   transform: scale(1, 0);
   transition: 0.4s ease-in-out;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   nav {
     all: unset;
     width: 50%;
@@ -297,7 +297,7 @@ nav ul {
   top: 30%;
   left: 40%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   nav ul {
     all: unset;
     display: flex;
@@ -308,7 +308,7 @@ nav ul {
 nav li {
   margin-bottom: 1.5em;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   nav li {
     margin-bottom: 0;
     margin: 0 1.875em;
@@ -374,13 +374,13 @@ nav a:hover {
   top: 1.375em;
   margin-left: 1.875em;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .form__label {
     top: 3%;
     margin-left: 8%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .form textarea {
     height: 25%;
   }
@@ -395,7 +395,7 @@ nav a:hover {
   font-weight: 300;
   border: 0.125em solid #0b0b0b;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .form__input {
     height: 10%;
     top: 1.875em;
@@ -436,12 +436,12 @@ nav a:hover {
   align-self: end;
   font-weight: 400;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .main__p {
     font-size: 2.5em;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main__p {
     font-size: 3.125em;
   }
@@ -453,13 +453,13 @@ nav a:hover {
 .main__p--sub {
   grid-row: 2/span 1;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .main__p--sub {
     font-size: 1.625em;
     font-style: italic;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main__p--sub {
     font-size: 2em;
     font-style: italic;
@@ -470,7 +470,7 @@ nav a:hover {
   justify-self: center;
   align-self: center;
 }
-@media screen and (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+@media screen and (min-width: 992px) and (prefers-reduced-motion: no-preference) {
   .main__btn {
     animation: pulse-button 1s infinite;
   }
@@ -508,7 +508,7 @@ nav a:hover {
   width: 2.5em;
   height: 2.5em;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .footer__lin {
     transition: 0.75s;
   }
@@ -521,7 +521,7 @@ nav a:hover {
   width: 3.125em;
   height: 3.125em;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .footer__git {
     transition: 0.75s;
   }
@@ -548,7 +548,7 @@ nav a:hover {
     grid-template-areas: "h2 h2";
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .p {
     grid-template: 0.25fr repeat(3, 1fr)/repeat(3, 1fr);
     justify-content: center;
@@ -557,7 +557,7 @@ nav a:hover {
     grid-template-areas: "h2 h2 h2" "p1 p4 p3" "p2 p4 p3" "p6 p5 p3";
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .p {
     grid-template: 0.25fr repeat(3, minmax(300px, 400px))/repeat(3, minmax(300px, 400px));
     justify-content: center;
@@ -570,7 +570,7 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .p__project1 {
     grid-area: p1;
   }
@@ -580,7 +580,7 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .p__project2 {
     grid-area: p2;
   }
@@ -590,7 +590,7 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .p__project3 {
     grid-area: p3;
   }
@@ -600,7 +600,7 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .p__project4 {
     grid-area: p4;
   }
@@ -610,7 +610,7 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .p__project5 {
     grid-area: p5;
   }
@@ -620,7 +620,7 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .p__project6 {
     grid-area: p6;
   }
@@ -655,7 +655,7 @@ q {
   gap: 0.625em 1.25em;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .strengths {
     width: 80%;
     margin: auto;
@@ -680,7 +680,7 @@ q {
     grid-row: 3/span 1;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .strengths {
     width: 70%;
     margin: auto;
@@ -690,7 +690,7 @@ q {
   grid-column: 1/span 2;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .strengths h3 {
     grid-column: 1/span 3;
   }
@@ -698,12 +698,12 @@ q {
 .strengths img {
   display: block;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .strengths img {
     height: 300px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .strengths img {
     height: 500px;
   }
@@ -721,7 +721,7 @@ q {
   grid-column: 1/span 1;
   grid-row: 3/span 1;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .strengths--left {
     grid-column: 2/span 1;
     grid-row: 3/span 1;
@@ -732,7 +732,7 @@ q {
 }
 
 /* My experiences rules */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .experiences {
     width: 70%;
     margin: auto;
@@ -788,7 +788,7 @@ q {
   grid-template: 0.125fr 0.5fr 0.5fr/1fr;
   height: 100vh;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .vision {
     height: auto;
     display: flex;
@@ -802,7 +802,7 @@ q {
   margin: 0 auto;
   padding: 3.125em 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .vision p {
     width: 50%;
   }
@@ -816,7 +816,7 @@ q {
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
 }
-@media screen and (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+@media screen and (min-width: 992px) and (prefers-reduced-motion: no-preference) {
   .vision img {
     animation: fade-in 4s ease-in-out;
   }
@@ -831,7 +831,7 @@ q {
   align-items: center;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .contact {
     display: grid;
     width: 80%;
@@ -844,7 +844,7 @@ q {
     align-items: stretch;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .contact .form {
     grid-area: form;
   }
@@ -858,7 +858,7 @@ q {
   justify-self: flex-start;
   transition: 0.75s;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .contact img:hover {
     filter: invert(43%) sepia(57%) saturate(6312%) hue-rotate(346deg) brightness(96%) contrast(79%);
   }
@@ -872,7 +872,7 @@ q {
 .contact h2 {
   margin-bottom: 1.875em;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .contact h2 {
     grid-area: h2;
   }
@@ -893,7 +893,7 @@ q {
 .contact__address {
   display: none;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .contact__address {
     display: grid;
     grid-area: address;
@@ -906,7 +906,7 @@ q {
 .contact__phone {
   display: none;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .contact__phone {
     display: grid;
     grid-area: phone;
@@ -919,7 +919,7 @@ q {
 .contact__email {
   display: none;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .contact__email {
     display: grid;
     grid-area: email;
