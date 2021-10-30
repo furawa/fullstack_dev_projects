@@ -8,9 +8,7 @@
 #about h2 {
     margin-bottom: em(20px);
 }
-q {
-    quotes: "„" "“";
-}
+
 .strengths {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -150,6 +148,12 @@ q {
     }
     details {
         width: 45%;
+        ul {
+            margin-left: 10%;
+        }
+        li {
+            list-style-type:disc;
+        }
     }
 }
 
