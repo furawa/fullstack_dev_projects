@@ -822,6 +822,9 @@ nav a:hover {
     animation: fade-in 4s ease-in-out;
   }
 }
+.vision b, .vision i {
+  font-weight: bolder;
+}
 
 /*=================================
  Rules for the Contact page
